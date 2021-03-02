@@ -133,8 +133,24 @@ $(document).ready(function() {
     $("#count .num").each(function(index, element) {
       counter($(element));
     });
-    $('#toggler').click(function(){
-        $('.navbar').toggle();
-        
-    });
+    
 });
+function scrollFooter(scrollY, heightFooter)
+{
+    console.log(scrollY);
+    console.log(heightFooter);
+
+    if(scrollY >= heightFooter)
+    {
+        $('footer').css({
+            'bottom' : '0px'
+        });
+    }
+    else
+    {
+        $('footer').css({
+            'bottom' : '-' + heightFooter + 'px'
+        });
+    }
+}
+

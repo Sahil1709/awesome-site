@@ -15,34 +15,26 @@
     left: 50%;
     transform: translate(-50% , -50%);
 }
-#toggler{
-  display: block;
-  position: absolute;
-  right: 2em;
-  font-size: 40px;
+
+.navbar-collapse{
+  height: 100vh;
+}
+.nav-item{
+  font-size: 50px;
+  margin: 10px;
+  align-items: center;
+}
+.nav-link{
   color: white;
-  border: 1px solid white;
-  background: none;
-  outline: none;
-}
-.navbar{
-  background-color:black;
-  display: block;
-}
-.navlist{
-  display: block;
-  text-align: right;
-}
-.list-item{
-  margin: 2em;
-}
-.navlist > .list-item > a{
-  color: white;
+  font-size: 100px;
+    font-family: 'Oswald',sans-serif;
   -webkit-text-fill-color: rgb(0, 0, 0);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
-  font-size: 50px;
 }
-.navlist > .list-item > a:hover{
+.nav-link:hover{
+  color: white;
   -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }

@@ -36,8 +36,8 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 0px;
     display:block;
     margin: 0 auto;
 }
@@ -401,4 +401,4 @@ body * {
       width: 100%;
     }
   }
- 
+  
