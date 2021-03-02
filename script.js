@@ -1,3 +1,4 @@
+
 var cursor = {
     delay: 8,
     _x: 0,
@@ -32,7 +33,17 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
-        
+        // Button Hovering
+        document.querySelectorAll('button').forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
         // Click events
         document.addEventListener('mousedown', function() {
             self.cursorEnlarged = true;
@@ -109,17 +120,21 @@ var cursor = {
 }
 
 cursor.init();
-
+AOS.init({
+    duration: 2500,
+  });
+  let scrollRef = 0;
+window.addEventListener('scroll', function() {
+  scrollRef <= 1 ? scrollRef++ : AOS.refresh();
+});
 $('main').hide();
 $(document).ready(function() {
-  AOS.init({
-    duration: 1200,
-  })
+
     setTimeout(function(){
         $('#count').fadeOut();
         $('.progress').fadeOut();
         $('main').fadeIn();
-    },3000);
+    },2000);
     $('#wrapper').hide();
     var counter = function($this) {
       var maxNum = Math.abs(parseInt($this.text()));
@@ -136,23 +151,13 @@ $(document).ready(function() {
     $("#count .num").each(function(index, element) {
       counter($(element));
     });
-    
-});
-function scrollFooter(scrollY, heightFooter)
-{
-    console.log(scrollY);
-    console.log(heightFooter);
+    $('a.scroll-link').click(function(e){
+		e.preventDefault();
+		$id = $(this).attr('href');
+		$('body,html').animate({
+			scrollTop: $($id).offset().top -20
+		}, 750);
+	});
+	
 
-    if(scrollY >= heightFooter)
-    {
-        $('footer').css({
-            'bottom' : '0px'
-        });
-    }
-    else
-    {
-        $('footer').css({
-            'bottom' : '-' + heightFooter + 'px'
-        });
-    }
-}
+});
