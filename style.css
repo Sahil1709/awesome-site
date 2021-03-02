@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background: #000000;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    position: relative;
+    float: right;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+    z-index: 1;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #000000;
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  color: #dc5656;
+  background-color: #000000;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Oswald", "Open Sans", sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+.header {
+  position: relative;
+  overflow: visible;
+}
+.header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: #dc5656;
+  transform: translateX(-50%);
+}
+
+.pen__subheading {
+  margin-bottom: 0;
+}
+.pen__subheading a {
+  color: #dc5656;
+}
+.pen__subheading a:hover, .pen__subheading a:focus {
+  color: #e58080;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.col {
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+  .col {
+    width: 50%;
+    float: left;
+  }
+  .col:nth-of-type(2n+1) {
+    clear: left;
+  }
+}
+.col.col--full {
+  width: 100%;
+}
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid white;
+}
+
+  .progress {
+    width: 400px;
+    max-width: 85vw;
+    height: 4px;
+    position: absolute;
+    bottom: 20vh;
+    left: 50%;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.5);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .progress:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    animation: load 3s linear;
+  }
+  @-moz-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-webkit-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @-o-keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes load {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 5%;
+    }
+    20% {
+      width: 15%;
+    }
+    30% {
+      width: 25%;
+    }
+    40% {
+      width: 30%;
+    }
+    50% {
+      width: 44%;
+    }
+    60% {
+      width: 50%;
+    }
+    70% {
+      width: 72%;
+    }
+    80% {
+      width: 84%;
+    }
+    90% {
+      width: 92%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+ 

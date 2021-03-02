@@ -1,0 +1,48 @@
+#home , #about , #contact{
+    text-align: center;
+    font-size: 34px;
+    height: 100vh;
+}
+#count{
+    position: absolute;
+    color: white;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-size: 200px;
+    font-family: 'Oswald',sans-serif;
+    bottom: 20vh;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#toggler{
+  display: block;
+  position: absolute;
+  right: 2em;
+  font-size: 40px;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  outline: none;
+}
+.navbar{
+  background-color:black;
+  display: block;
+}
+.navlist{
+  display: block;
+  text-align: right;
+}
+.list-item{
+  margin: 2em;
+}
+.navlist > .list-item > a{
+  color: white;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.navlist > .list-item > a:hover{
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
