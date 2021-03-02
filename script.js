@@ -112,6 +112,9 @@ cursor.init();
 
 $('main').hide();
 $(document).ready(function() {
+  AOS.init({
+    duration: 1200,
+  })
     setTimeout(function(){
         $('#count').fadeOut();
         $('.progress').fadeOut();
@@ -153,4 +156,3 @@ function scrollFooter(scrollY, heightFooter)
         });
     }
 }
-
