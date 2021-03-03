@@ -1,7 +1,30 @@
-#home , #about {
+#quote , #about , #contact {
     text-align: center;
-    font-size: 34px;
-    height: 100vh;
+}
+
+#bg {
+  background: url('https://images.unsplash.com/photo-1494587351196-bbf5f29cff42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFya3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+.after{
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 100px;
+    font-family: 'Oswald',sans-serif;
+  position: relative;
+  top: 40%;
+  height: 100%;
+  width: 100%;
+}
+.after:hover{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
 }
 #count{
     position: absolute;
@@ -21,12 +44,11 @@
 }
 .nav-item{
   font-size: 50px;
-  margin: 10px;
   align-items: center;
 }
 .nav-link{
   color: white;
-  font-size: 100px;
+  font-size: 80px;
     font-family: 'Oswald',sans-serif;
   -webkit-text-fill-color: rgb(0, 0, 0);
   -webkit-text-stroke-width: 1px;
@@ -50,4 +72,36 @@
 .backttop:hover{
   color: black;
   background-color: white;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255,0.5);
+  border: none;
+}
+.navbar-toggler:hover{
+  color: rgba(255, 255, 255,1);
+}
+.toggler-text{
+  display: inline;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  right: 60px;
+}
+.item{
+  color: white;
+  font-family: 'Oswald';
+  font-size: 100px;
+}
+.outer-stroke{
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.outer-stroke:hover{
+  -webkit-text-fill-color: rgb(255, 255, 255);
+}
+.inner-stroke{
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }

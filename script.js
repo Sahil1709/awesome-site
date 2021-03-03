@@ -158,6 +158,11 @@ $(document).ready(function() {
 			scrollTop: $($id).offset().top -20
 		}, 750);
 	});
-	
+	const toggler = document.querySelector('.menu__toggler');
+    const menu    = document.querySelector('.menu');
+    toggler.addEventListener('click', () => {
+    toggler.classList.toggle('active');
+    menu.classList.toggle('active');
+    });
 
 });
